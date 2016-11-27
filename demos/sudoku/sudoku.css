@@ -6,6 +6,7 @@
 .main{
         width:20rem;
         margin:0 auto;
+        font-family:微软雅黑,Helvetica,Microsoft YaHei;
         /*background:#FFF*/
 }
 table{
@@ -25,23 +26,25 @@ table{
 .tb .tb_1 td{
         border:1px solid #999;
         text-align:center;
- }
+        font-weight: bold;
+        font-size: 1.5rem;
+}
 .tb .wrong{color:#f00}
 .tb .td_style{ background:#FF9}
 
 
-#btn{
-        height:100px;
+.btn{
+        width: 20rem;
+        /*height: ;*/
         border:0px solid #000;
 }
-#btn input{
-        width:78px;
-        height:50px;
-        font-size:32px;
-        display:block;
-        float:left;
+.btn input{
+        width: 25%;
+        line-height: 2rem;
+        font-size: 1.5rem;
+        float: left;
 }
-#btn .input_style{
-        background:#3C3;
-        color:#fff
+.btn .input_style{
+        background-color: #337ab7;
+        border-color: #2e6da4;
 }
