@@ -44,8 +44,7 @@
 		};
 		
 	});
-	
-	
+
 	//格子添加事件
 	$td.each(function(index, element) { 		 	      
 		$(this).bind('click',function(){
@@ -68,7 +67,6 @@
 		var arr_n = [];						 			
 		//计算位置
 		position($index);
-					
 		console.log('第'+$index+'个 在第 '+$b+' 个tr里第 '+$c+' 个table里第 '+$e+' 个tr里第 '+$f+' 个td上');
 		for (i = 0 ; i < $td.length; i++) {			
 			position_1(i);												  			  
@@ -85,7 +83,7 @@
 				arr_n.push(i);
 			};												
 		};		
-		
+		setTimeout(function(){$td.removeClass('td_style')}, 200);
 		//arr_add( arr_n , $number );	
 		criteria_0(arr_n);			
 		criteria_1(arr_n);

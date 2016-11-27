@@ -1,48 +1,37 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>数独</title>
-    <style>
-        *{ margin:0; padding:0; font-family:'黑体'}
-        /*body{ background:#ccc}*/
-        #main{width:472px;margin:0 auto; background:#FFF}
-        #tab{ border:2px solid #333;}
-        table{ border-collapse:collapse; border:2px solid #333;}
-        #tab table td{ width:50px; height:50px; border:1px solid #999;text-align:center;font-size:38px; tabindex:-1; }
-        #tab .wrong{ color:#f00}
-        #tab .td_style{ background:#FF9}
-
-        #btn{ height:100px; border:0px solid #000;}
-        #btn input{ width:78px; height:50px; font-size:32px; display:block; float:left}
-        #btn .input_style{ background:#3C3; color:#fff}
-    </style>
-    
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width"/>
+    <title>数独</title>
+    <link rel="stylesheet" href="../../css/public.css">
+    <link rel="stylesheet" href="sudoku.css">
+    <script src="../../js/fontSize.js"></script>
 </head>
 <body>
-    <div id="main"> 
+    <div class="main" id="main"> 
         <div id="rule">
            <h2>规则：</h2>
            每一行、每一列、每一宫格内的数字不能重复。
         </div>
-        <table id="tab">
+        <table class="tb" id="tab" cellpadding=0>
         	<tr id="tr_0">
             	<td>
-                	<table id="tb_0">
+                	<table class="tb_1" id="tb_0">
                         <tr><td></td><td></td><td></td></tr>
                         <tr><td></td><td></td><td></td></tr>   
                         <tr><td></td><td></td><td></td></tr>    
                     </table>
                 </td>
                 <td>
-                	<table id="tb_1">
+                	<table class="tb_1" id="tb_1">
                         <tr><td></td><td></td><td></td></tr>
                         <tr><td></td><td></td><td></td></tr>   
                         <tr><td></td><td></td><td></td></tr>    
                     </table>     
                 </td>
                 <td>
-                	<table id="tb_2">
+                	<table class="tb_1" id="tb_2">
                         <tr><td></td><td></td><td></td></tr>
                         <tr><td></td><td></td><td></td></tr>   
                         <tr><td></td><td></td><td></td></tr>    
@@ -51,21 +40,21 @@
             </tr>
             <tr id="tr_1">
             	<td>
-                	<table id="tb_3">
+                	<table class="tb_1" id="tb_3">
                         <tr><td></td><td></td><td></td></tr>
                         <tr><td></td><td></td><td></td></tr>   
                         <tr><td></td><td></td><td></td></tr>    
                     </table>     
                 </td>
                 <td>
-                	<table id="tb_4">
+                	<table class="tb_1" id="tb_4">
                         <tr><td></td><td></td><td></td></tr>
                         <tr><td></td><td></td><td></td></tr>   
                         <tr><td></td><td></td><td></td></tr>    
                     </table>     
                 </td>
                 <td>
-                	<table id="tb_5">
+                	<table class="tb_1" id="tb_5">
                         <tr><td></td><td></td><td></td></tr>
                         <tr><td></td><td></td><td></td></tr>   
                         <tr><td></td><td></td><td></td></tr>    
@@ -74,21 +63,21 @@
             </tr>
             <tr id="tr_2">
             	<td>
-                	<table id="tb_6">
+                	<table class="tb_1" id="tb_6">
                         <tr><td></td><td></td><td></td></tr>
                         <tr><td></td><td></td><td></td></tr>   
                         <tr><td></td><td></td><td></td></tr>    
                     </table>     
                 </td>
                 <td>
-                	<table id="tb_7">
+                	<table class="tb_1" id="tb_7">
                         <tr><td></td><td></td><td></td></tr>
                         <tr><td></td><td></td><td></td></tr>   
                         <tr><td></td><td></td><td></td></tr>    
                     </table>     
                 </td>
                 <td>
-                	<table id="tb_8">
+                	<table class="tb_1" id="tb_8">
                         <tr><td></td><td></td><td></td></tr>
                         <tr><td></td><td></td><td></td></tr>   
                         <tr><td></td><td></td><td></td></tr>    
