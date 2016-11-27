@@ -9,14 +9,12 @@
 	var $number_1='';
 	var $boole=true;
 	
-	$('#btn input').click(function(){
+	$('#btn').on('click','input',function(){
 		if($(this).val()=='C'){
 			$number='';
-		}
-		else if($(this).val()=='重置'){
+		}else if($(this).val()=='重置'){
 			$td.text('').removeClass('wrong td_style');
-		}
-		else if($(this).val()=='标记'){			
+		}else if($(this).val()=='标记'){			
 			$number=$number_1;
 			if($boole){
 				$boole=false;
@@ -25,15 +23,13 @@
 				$boole=true;
 				$(this).css('color','#000')	
 			 };
-		}		
-		else{
+		}else{
 			$number=$(this).val();
 			$number_1=$number;
 		};
 		$(this).addClass('input_style').siblings().removeClass('input_style')		
 	}); 
-	
-	
+
 	//键盘输入数字
 	$(window).keydown(function(e){			   
 		if(e.keyCode>=49&&e.keyCode<=57) {

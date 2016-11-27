@@ -12,13 +12,7 @@ table{
         table-layout:fixed;
         border:2px solid #333;
         box-sizing: border-box;
-}
-tr{
-        /*height: 33.33333333333%*/
-}
-td{
-        width: 0;
-        height: 0;
+        line-height: 0;
 }
 .tb{
         width: 20rem;
