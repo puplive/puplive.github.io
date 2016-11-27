@@ -70,7 +70,7 @@
 		position($index);
 					
 		console.log('第'+$index+'个 在第 '+$b+' 个tr里第 '+$c+' 个table里第 '+$e+' 个tr里第 '+$f+' 个td上');
-		for (i = 0 ; i < $td.size(); i++) {			
+		for (i = 0 ; i < $td.length; i++) {			
 			position_1(i);												  			  
 			if ($b == $bb && $e==$ee) {   		//判断一行 
 				$td.eq(i).addClass('td_style');	
@@ -121,7 +121,7 @@
 	
 	//数字相同的下标放在一个数组里
 	function arr_add(arr,num){			
-		for (i = 0 ; i < $td.size(); i++){					
+		for (i = 0 ; i < $td.length; i++){					
 			if( $td.eq(i).text() == num){
 				arr.push(i);
 			};					
@@ -188,7 +188,7 @@
 	var $tr = $('#tab table > tr');		//内层 tr
 	var $td_1 = $('#tab > tr > td')	;	//外层 td
 	
-	for (i = 0 ; i < $td.size(); i++) {			
+	for (i = 0 ; i < $td.length; i++) {			
 		position_1(i);												  
 		//判断一行   
 		if ($b == $bb && $e==$ee) {
