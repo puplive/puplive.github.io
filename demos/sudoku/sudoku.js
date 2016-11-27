@@ -1,5 +1,5 @@
 // JavaScript Document
-$(function(){
+// $(function(){
 	
 	var $td = $('#tab table td');		//内层 td	
 	var $index=0;                       //记录鼠标点击的位置
@@ -108,7 +108,7 @@ $(function(){
 		$d = x%9;                    //内层table的第几个td			
 		$e = parseInt($d/3);             //内层tr			
 		$f = $d%3;                       //内层tr的第几个td	
-	}
+	};
 	
 	function position_1(x){
 		$aa = parseInt(x/9);          
@@ -117,7 +117,7 @@ $(function(){
 		$dd = x%9;                    			
 		$ee = parseInt($dd/3);             
 		$ff = $dd%3;                       
-	}
+	};
 	
 	//数字相同的下标放在一个数组里
 	function arr_add(arr,num){			
@@ -126,14 +126,14 @@ $(function(){
 				arr.push(i);
 			};					
 		};
-	}
+	};
 	
 	//归类
 	function group(arr){
 		if($td.eq(i).text()!=''){				
 			arr.push(i)
 		}
-	}			
+	};			
 	
 	//判断标准 criteria 
 	function criteria(arr){ 	
@@ -146,7 +146,7 @@ $(function(){
 				}					
 			} 		   
 		}
-	} 	
+	};
 	
 	//重置背景；
 	function criteria_0(arr){ 	
@@ -170,7 +170,7 @@ $(function(){
 	
 	
 	
-});	
+// });	
 
 
 
