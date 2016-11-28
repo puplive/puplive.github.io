@@ -8,12 +8,43 @@
 	var $number='';
 	var $number_1='';
 	var $boole=true;
+	var timer = null;
+	var subject=['8','','','','','3','','7','',
+				 '','','','6','','','','9','',
+				 '','','','','','','2','','',
+				 '','5','','','','','','','',
+				 '','','7','','4','5','1','','',
+				 '','','','7','','','','3','',
+				 '','','1','','','8','','9','',
+				 '','','','5','','','','','',
+				 '','6','8','','1','','4','','',
+				]
+	intMap(subject);
+	// 初始化
+	function intMap(arr){
+		var t = 0,h = 0, m = 0, s = 0;
+		$('#timer').text(h+':'+m+':'+s)
+		clearInterval(timer);
+		timer = setInterval(function(){
+			t++;
+			h = parseInt(t/3600);
+			m = parseInt(t%3600/60);
+			s = parseInt(t%60);
+			$('#timer').text(h+':'+m+':'+s)
+		}, 1000);
+		for(var i = 0;i<100;i++ ){
+			if(arr[i]){
+				$td.eq(i).text(arr[i]).addClass('initial')
+			}
+		}
+	}
 	
 	$('#btn').on('click','input',function(){
 		if($(this).val()=='C'){
 			$number='';
 		}else if($(this).val()=='重置'){
 			$td.text('').removeClass('wrong td_style');
+			intMap(subject)
 		}else if($(this).val()=='标记'){			
 			$number=$number_1;
 			if($boole){
@@ -43,17 +74,19 @@
 
 	//格子添加事件
 	$td.each(function(index, element) { 		 	      
-		$(this).bind('click',function(){
-			$index=index;					//记录点击位置
-			$last_number = $td.eq($index).text(); //记录之前的数字				
-			//判断新数字和原数字是否相等，相等就清空，不等就覆盖
-			if( $last_number == $number ){
-				$td.eq(index).text('');
-			}else{
-				$td.eq(index).text($number);		 //添加新数字
-			};												 
-			criteria_x();	
-		});		
+		$(this).on('click',function(){
+			if(!$(this).hasClass('initial')){
+				$index=index;					//记录点击位置
+				$last_number = $td.eq($index).text(); //记录之前的数字				
+				//判断新数字和原数字是否相等，相等就清空，不等就覆盖
+				if( $last_number == $number ){
+					$td.eq(index).text('');
+				}else{
+					$td.eq(index).text($number);		 //添加新数字
+				};												 
+				criteria_x();
+			}
+		});
 	});
 	
 	
@@ -102,6 +135,7 @@
 		$d = x%9;                    //内层table的第几个td			
 		$e = parseInt($d/3);             //内层tr			
 		$f = $d%3;                       //内层tr的第几个td	
+		// console.log();
 	};
 	
 	function position_1(x){

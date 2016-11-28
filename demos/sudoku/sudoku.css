@@ -3,6 +3,7 @@
         padding:0;
         font-family:'黑体'
 }*/
+#timer{color: #f00}
 .main{
         width:20rem;
         margin:0 auto;
@@ -11,7 +12,7 @@
 }
 table{
         table-layout:fixed;
-        border:1px solid #333;
+        border:2px solid #333;
         box-sizing: border-box;
         line-height: 0;
 }
@@ -32,7 +33,9 @@ table{
 .tb .wrong{color:#f00}
 .tb .td_style{ background:#FF9}
 
-
+.tb .initial{
+        background: #ccc
+}
 .btn{
         width: 20rem;
         border:0px solid #000;
