@@ -485,6 +485,27 @@ body{
     background: #ffffff;
 }
 
+.full_btn{
+    z-index: 999;
+    display: block;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+.full_btn a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(0,0,0,.8);
+    font-size: 16px;
+    text-align: center;
+    line-height: 1rem;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    box-shadow: 0 0 10px #f00;
+}
+
 .arrow_div{
     z-index: 5;
     position: absolute;

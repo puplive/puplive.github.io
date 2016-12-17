@@ -334,7 +334,40 @@ var scrollFunc=function(e){
      }
 }
 
+/*全频按钮*/ 
+// 启动全屏!
+// launchFullScreen(document.documentElement); // 整个网页
+// launchFullScreen(document.getElementById("videoElement")); // 某个页面元素
+document.getElementById('full_screen_y').onclick=function(){
+    launchFullscreen(document.documentElement);
+}
 
+document.getElementById('full_screen_n').onclick=function(){
+    exitFullscreen();
+}
+
+// 判断各种浏览器，找到正确的方法 全屏
+function launchFullscreen(element) {
+  if(element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullscreen) {
+    element.webkitRequestFullscreen();
+  } else if(element.msRequestFullscreen) {
+    element.msRequestFullscreen();
+  }
+}
+// 判断浏览器种类 退出全屏
+function exitFullscreen() {
+  if(document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if(document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if(document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  }
+};
 
 
 /*注册事件*/
@@ -443,3 +476,4 @@ function touchEnd(event){
         btnChange(indexs,true,1);
     }
 }
+
