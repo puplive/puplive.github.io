@@ -338,10 +338,11 @@ var scrollFunc=function(e){
 // 启动全屏!
 // launchFullScreen(document.documentElement); // 整个网页
 // launchFullScreen(document.getElementById("videoElement")); // 某个页面元素
-document.getElementById('full_screen_y').onclick=function(){
+var full_screen_y = document.getElementById('full_screen_y')
+full_screen_y.onclick=function(){
     launchFullscreen(document.documentElement);
 }
-
+// full_screen_y.click() //只能通过手势触发
 document.getElementById('full_screen_n').onclick=function(){
     exitFullscreen();
 }
