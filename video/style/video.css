@@ -172,7 +172,6 @@ html,body {
 html,body{
 	width: 100%;
 	height: 100%;
-
 }
 a{
 	color: #333;
@@ -187,6 +186,7 @@ a{
 	flex-direction: column;
 	position: relative;
 	overflow: hidden;
+	font-family: Hiragino Sans GB,Microsoft YaHei;
 }
 
 .header{
@@ -209,6 +209,7 @@ a{
 }
 .nav{
 	position: absolute;
+	z-index: 9;
 	width: 100px;
 	height: 100%;
 	top: 40px;
@@ -276,27 +277,52 @@ a{
 	overflow: auto;
 }
 
+
+/* 列表页 */ 
 .banner{
-	height: 10rem;
+	height: 20rem;
 	background: #333
 }
-.list section{
-	height: 25rem;
+.banner li img{
+	width: 100%
+}
+/*.banner li{
+	background: url(images/ban1.jpg);
+	background-size: 100% 
+}*/
+ul.list li{
+	height: 12.5rem;
 	overflow: hidden;
 	background-image:-webkit-linear-gradient(to bottom , #eee, #333);
 	background-image:linear-gradient(to bottom ,#eee, #333);
+	position: relative;
 }
-.list section h3,.list section p{
-	width: 50%;
+.list li h3,.list li p{
+	// width: 50%;
 	margin: 0 auto;
 	text-align: center;
 	color: #fff;
 }
-.list section h3{
-	margin-top:50%;
-	font-size: 2rem; 
+.list li h3{
+	// margin-top:50%;
+	// font-size: 2rem; 
 }
 
+.list li a{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
 .hid{
 	display: none
+}
+
+
+/* 播放页 */
+
+.av{
+	
 }

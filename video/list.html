@@ -1,11 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>yf</title>
+	<title>电影</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<link rel="stylesheet" href="yf.css">
-	
+	<link rel="stylesheet" href="style/video.css">
 </head>
 <body>
 	<div class="main">
@@ -22,36 +22,25 @@
 			<a href="javascript:;">p4</a>
 			<a href="javascript:;">p5</a>	
 		</nav>
-		<article class="con">
-			<article>
-				<div class="banner"></div>
-				<section>
-					<h3>标题</h3>
-					<p>介绍</p>
-				</section>
-			</article>
-			<article class="list">
-				<section>
-					<h3>标题</h3>
-					<p>介绍</p>
-				</section>
-				<section>
-					<h3>标题</h3>
-					<p>介绍</p>
-				</section>
-				<section>
-					<h3>标题</h3>
-					<p>介绍</p>
-				</section>
-				<section>
-					<h3>标题</h3>
-					<p>介绍</p>
-				</section>
-			</article>
-		</article>
+		<div class="con av">
+			<ul class="list" id="list">
+				<li>
+					<h3></h3>
+					<p></p>
+					<a href=""></a>
+				</li>
+			</ul>
+		</div>
+			
 
 	</div>
 	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
-	<script src="yf.js"></script>
+	<script src="js/video.js"></script>
+	<script src="js/tpl.js"></script>
+	<script src="js/data.js"></script>
+	<script>
+		console.log(data);
+		v_list('list',data);
+	</script>
 </body>
 </html>
