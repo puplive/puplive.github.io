@@ -1,6 +1,6 @@
 // JavaScript Document
 // $(function(){
-	
+	console.log(1);
 	var $td = $('#tab table td');		//内层 td	
 	var $index=0;                       //记录鼠标点击的位置
 	var $a , $b , $c , $d , $e , $f , $aa , $bb , $cc , $dd , $ee , $ff  ;	

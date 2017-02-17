@@ -14,7 +14,6 @@ function v_list(data){
 }
 
 function video(data,n){
-	console.log(data[n].url);
 	return '<video width="100%" height="100%" preload="auto" poster="'+data[n].img[0]+'" controls >\
 				<source src="'+data[n].url+'" type="video/mp4">\
 			</video>'
