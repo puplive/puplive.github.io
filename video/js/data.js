@@ -2,7 +2,7 @@ var data = [
 	{
 		name:'机械心',
 		class:'动画、剧情、冒险、奇幻、爱情',
-		url:'http://cn-sdjn-cu-v-02.acgvideo.com/vg7/d/12/6982169-1.mp4?expires=1487352000&platform=html5&ssig=cUqTzB-QYRx0Mqej-cAsGg&oi=2071527507&nfa=BaDS8BUFZDb8iKo4Vfwarw==&dynamic=1',
+		url:'blob:http://www.bilibili.com/0c455fee-57ed-4a1d-bbf5-e3b5618e10c2',
 		img:[
 				'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3413187730,530730540&fm=23&gp=0.jpg',
 				'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3130903006,482888735&fm=23&gp=0.jpg',
